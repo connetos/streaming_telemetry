@@ -1,8 +1,4 @@
-# LLDP
-
-LLDP telemetry结构如下（JSON格式）.
-
-<pre>
+# vim:set ft=json: 
 {
     "protocols": {
         "lldp": {
@@ -94,4 +90,4 @@ LLDP telemetry结构如下（JSON格式）.
         }
     }
 }
-</pre>
+

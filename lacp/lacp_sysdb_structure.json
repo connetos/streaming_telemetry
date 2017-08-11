@@ -1,8 +1,4 @@
-# LACP
-
-LACP telemetry structure.
-
-<pre>
+# vim:set ft=json: 
 {
     "protocols": {
         "lacp": {
@@ -79,4 +75,4 @@ LACP telemetry structure.
         }
     }
 }
-</pre>
+
