@@ -1,3 +1,0 @@
-# Lacp
-
-Lacp telemetry structure.

@@ -1,0 +1,3 @@
+# OSPF
+
+OSPF telemetry structure.

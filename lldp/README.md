@@ -1,0 +1,3 @@
+# LLDP
+
+LLDP telemetry structure.
