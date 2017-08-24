@@ -1,0 +1,22 @@
+# vim:set ft=json: 
+{
+    "analyzer": {
+        "instance" : [
+            {
+                "1" : {
+                    "input" : {
+                        "ingress" : [
+                            "te-1/1/1",
+                            "te-1/1/1"
+                        ],
+                        "egress" : [
+                            "te-1/1/21",
+                            "te-1/1/21"
+                        ]
+                    },
+                    "output" : "te-1/1/31"
+                }
+            }
+        ]
+    }
+}

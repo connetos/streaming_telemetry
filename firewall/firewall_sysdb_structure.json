@@ -1,0 +1,102 @@
+# vim:set ft=json: 
+{
+    "firewall": {
+        "term" : [
+            {
+                "t1" : {
+                    "dest_mac" : [
+                    ],
+                    "source_mac" : [
+                    ],
+                    "dest_ipv4" : [
+                    ],
+                    "source_ipv4" : [
+                    ],
+                    "l4_dest_port" : [
+                    ],
+                    "l4_source_port" : [
+                    ],
+                    "protocol" : [
+                    ],
+                    "ether_type" : [
+                    ],
+                    "vlan" : [
+                    ],
+                    "cos" : [
+                    ],
+                    "dscp" : [
+                    ],
+                    "tcp_flag" : [
+                    ]
+                }
+            }
+        ],
+        "filter" : [
+            {
+                "matching" : {
+                    "term" : [
+                        {
+                            "t1" : {
+                                "action" : "discard"
+                            }
+                        }
+                    ]
+                },
+                "input" : {
+                    "gigabit_ethernet" : [
+                        "te-1/1/1",
+                        "te-1/1/11"
+                    ],
+                    "vlan_interface": [
+                        "vlan1",
+                        "vlan2"
+                    ]
+                },
+                "outout" : {
+                    "gigabit_ethernet" : [
+                        "te-1/1/1",
+                        "te-1/1/11"
+                    ],
+                    "vlan_interface": [
+                        "vlan1",
+                        "vlan2"
+                    ]
+                }
+            }
+        ],
+        "forwarder" : [
+            {
+                "match_mode" : "matched",
+                "matching" : {
+                    "term" : [
+                        "t1",
+                        "t2"
+                    ]
+                },
+                "action" : {
+                    "switching" : {
+                    },
+                    "mirroring" : {
+                    },
+                    "classifying" : {
+                    },
+                    "policing" : {
+                    },
+                    "routing" : {
+                    }
+                },
+                "input" : {
+                    "gigabit_ethernet" : [
+                        "te-1/1/1",
+                        "te-1/1/11"
+                    ],
+                    "vlan_interface": [
+                        "vlan1",
+                        "vlan2"
+                    ]
+                }
+            }
+        ]
+    }
+}
+

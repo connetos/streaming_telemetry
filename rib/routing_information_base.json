@@ -1,0 +1,21 @@
+# vim:set ft=json: 
+{
+    "routing_information_base": {
+        "network" : [
+            {
+                "10.10.0.0/16" : {
+                    "type" : "connected",
+                    "nexthop" : [
+                        {
+                            "5.5.5.5" : {
+                                "gateway_interface" : "",
+                                "metric" : 5
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+

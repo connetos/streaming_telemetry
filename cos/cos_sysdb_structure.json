@@ -1,0 +1,43 @@
+# vim:set ft=json: 
+{
+    "class-of-service": {
+        "forward_class" : [
+            {
+                "c1" : {
+                    "queue_num" : 0
+                }
+            }
+        ],
+        "classifier" : [
+            {
+                "c1" : {
+                    "trust_mode" : "dscp",
+                    "forwarding_class" : [
+                        {
+                            "f1" : {
+                                "code_point" : [
+                                    11,
+                                    34
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "interface" : [
+            "classifier" : "c1"
+        ],
+        "schedule" : {
+            "mode" : "",
+            "queue" : [
+                {
+                    "1" : {
+                        "weight" : 1
+                    }
+                }
+            ]
+        }
+    }
+}
+

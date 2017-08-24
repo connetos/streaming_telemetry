@@ -48,8 +48,10 @@
                             ] 
                         },
                         "unknown_tlvs_info" : [
-                            "rem_unknown_tlv_type" : "",
-                            "rem_unknown_tlv_info" : ""
+                            {
+                                "rem_unknown_tlv_type" : "",
+                                "rem_unknown_tlv_info" : ""
+                            }
                         ],
                         "organization_tlvs_info" : [
                             {

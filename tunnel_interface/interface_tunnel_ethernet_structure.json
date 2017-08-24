@@ -1,0 +1,47 @@
+# vim:set ft=json: 
+{
+    "interface": {
+        "tunnel-ethernet": [
+            {
+                "tunnel1" : {
+                    "description": "xxx",
+                    "mode": "vxlan",
+                    "source" : {
+                        "address" : ""
+                    },
+                    "destination" : {
+                        "address" : ""
+                    },
+                    "static_mac_address" : [
+                        {
+                            "00:00:11:22:33:44" : {
+                                "vsi" : [
+                                    1,
+                                    2
+                                ]
+                            }
+                        }
+                    ],
+                    "statistics" : {
+                        "in_octets" : ,
+                        "in_ucast_pkts" :,
+                        "in_non_ucast_pkts" :,
+                        "in_discards" :,
+                        "in_errors" :,
+                        "in_unknown_protocols" :,
+                        "out_octets" :,
+                        "out_ucast_pkts" :,
+                        "out_non_ucast_pkts" :,
+                        "out_discards" :,
+                        "out_errors" :,
+                        "out_qlen" :,
+                        "in_receives" :,
+                        "in_hdr_errors" :,
+                        "forward_datagrams" :,
+                        "in_discards" :
+                    }
+                }
+            }
+        ]
+    }
+}
