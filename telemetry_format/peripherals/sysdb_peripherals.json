@@ -4,6 +4,7 @@
         "fans" : [
             {
                 "1" : {
+                    "status" : "present",
                     "speed_rpm" : "",
                     "speed_per" : 5
                 }
