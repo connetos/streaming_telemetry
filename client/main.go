@@ -39,8 +39,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/richard28530/streaming_telemetry/telemetry_client/telemetry/auth/credential"
-	"github.com/richard28530/streaming_telemetry/telemetry_client/telemetry/collector/cli/query"
+	"github.com/richard28530/streaming_telemetry/client/auth/credential"
+	"github.com/richard28530/streaming_telemetry/client/query"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
