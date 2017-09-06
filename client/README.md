@@ -1,4 +1,4 @@
-#Telemetry客户端
+# Telemetry客户端
 
 client实现了基本的streaming telemetry的客户端功能。当前主要用于设备端的telemetry功能测试。
 
@@ -8,11 +8,11 @@ client实现了基本的streaming telemetry的客户端功能。当前主要用�
 按照下述步骤进行编译安装。
 
 - 1. 新建目录xxx作为编译目录
-  <pre>
+<pre>
 mkdir xxxx
 export GOROOT=~/go
 export GOPATH=~/xxxx
-  </pre>
+</pre>
 - 2. 下载streaming telemetry client，同时会下载rpc/format等。
 <pre>
 go get github.com/richard28530/streaming_telemetry
