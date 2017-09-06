@@ -23,22 +23,10 @@
                         }
                     ],
                     "statistics" : {
-                        "in_octets" : ,
-                        "in_ucast_pkts" :,
-                        "in_non_ucast_pkts" :,
-                        "in_discards" :,
-                        "in_errors" :,
-                        "in_unknown_protocols" :,
-                        "out_octets" :,
-                        "out_ucast_pkts" :,
-                        "out_non_ucast_pkts" :,
-                        "out_discards" :,
-                        "out_errors" :,
-                        "out_qlen" :,
-                        "in_receives" :,
-                        "in_hdr_errors" :,
-                        "forward_datagrams" :,
-                        "in_discards" :
+                        "rx_pkt_count" : 12,
+                        "rx_byte_count" : 1213,
+                        "tx_pkt_count" : 23123,
+                        "tx_byte_count" : 3143455
                     }
                 }
             }

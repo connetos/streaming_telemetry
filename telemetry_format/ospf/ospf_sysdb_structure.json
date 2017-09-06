@@ -4,6 +4,14 @@
         "ospf4": {
             "area" : [
                 "0.0.0.0" : {
+                    "status" : {
+                        "spf_run_times" : 10,
+                        "area_bdr_router_count" : 11,
+                        "as_bdr_router_count" : 12,
+                        "area_lsa_count" : 20
+                    },
+                    "lsdb" : {
+                    },
                     "area_range" : [
                         {
                             "1.1.1.0/24" : {
@@ -38,11 +46,13 @@
                                 "vif" : [
                                     {
                                         "vif20" : {
-                                            "address" : {
-                                                "12.12.12.1" : {
-                                                    "interface_cost" : 1
+                                            "address" : [
+                                                {
+                                                    "12.12.12.1" : {
+                                                        "interface_cost" : 1
+                                                    }
                                                 }
-                                            }
+                                            ]
                                         }
                                     }
                                 ]
@@ -84,7 +94,14 @@
            "rfc1538_compatibility" : {
                "enable" : "true"
            },
-           "router-id": "192.168.1.33"
+           "router-id": "192.168.1.33",
+           "status" : {
+               "is_area_bdr" : true,
+               "is_as_bdr" : true,
+               "external_lsa" : 12,
+               "originate_lsa" : 10,
+               "rx_new_lsa" : 30
+           }
         }
     }
 }
