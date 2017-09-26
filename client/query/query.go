@@ -27,7 +27,7 @@ import (
 	"google.golang.org/grpc/codes"
 
 	log "github.com/golang/glog"
-	ocpb "github.com/richard28530/streaming_telemetry/rpc"
+	ocpb "github.com/connetos/streaming_telemetry/rpc"
 )
 
 const (

@@ -15,7 +15,7 @@ export GOPATH=~/xxxx
 </pre>
 - 2. 下载streaming telemetry client，同时会下载rpc/format等。
 <pre>
-go get github.com/richard28530/streaming_telemetry
+go get github.com/connetos/streaming_telemetry
 </pre>
 - 3. 下载go依赖，client依赖如下
 <pre>
@@ -30,7 +30,7 @@ go get google.golang.org/grpc
 </pre>
 - 4. 编译
 <pre>
-go build src/github.com/richard28530/streaming_telemetry/client/main.go
+go build src/github.com/connetos/streaming_telemetry/client/main.go
 </pre>
 
 ## 使用方法
@@ -57,6 +57,6 @@ Subscribe performs an OpenConfig Subscribe request for the provided query paths.
 * (可选)重新生成rpc go代码
 
 ```
-cd $GOPATH/github.com/richard28530/streaming_telemetry/rpc
+cd $GOPATH/github.com/connetos/streaming_telemetry/rpc
 protoc --go_out=plugins=grpc:. *.proto
 ```
