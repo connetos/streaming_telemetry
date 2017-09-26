@@ -1,0 +1,35 @@
+# vim:set ft=json: 
+{
+    "interface": {
+        "tunnel-ethernet": [
+            {
+                "tunnel1" : {
+                    "description": "xxx",
+                    "mode": "vxlan",
+                    "source" : {
+                        "address" : ""
+                    },
+                    "destination" : {
+                        "address" : ""
+                    },
+                    "static_mac_address" : [
+                        {
+                            "00:00:11:22:33:44" : {
+                                "vsi" : [
+                                    1,
+                                    2
+                                ]
+                            }
+                        }
+                    ],
+                    "statistics" : {
+                        "rx_pkt_count" : 12,
+                        "rx_byte_count" : 1213,
+                        "tx_pkt_count" : 23123,
+                        "tx_byte_count" : 3143455
+                    }
+                }
+            }
+        ]
+    }
+}

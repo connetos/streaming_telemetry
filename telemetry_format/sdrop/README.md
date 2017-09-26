@@ -1,0 +1,60 @@
+# SDrop
+
+SDrop telemetry结构如下（JSON格式）.
+
+<pre>
+{
+    "protocols": {
+        "sdrop": {
+            "polling-interval": "60",
+            "collector" : {
+                "address" : "",
+                "port" : ""
+            },
+            "stats" : [
+                {
+                    "meta" : {
+                        "ingress_intf" : "",
+                        "egress_intf" : "",
+                        "drop_reason" : "",
+                        "timestamp" : ""
+                    },
+                    "data" : {
+                        "l2" : {
+                            "dmac" : "",
+                            "smac" : "",
+                            "ether_type" : "",
+                            "pkt_length" : "",
+                            "tag" : {
+                                "tpid" : "",
+                                "vlan_id" : ""
+                            }
+                        },
+                        "l3" : {
+                            "arp" : {
+                                "op_code" : "",
+                                "sender_mac" : "",
+                                "sender_ip" : "",
+                                "target_mac" : "",
+                                "target_ip" : ""
+                            },
+                            "ipv4" : {
+                                "sender_ip" : "",
+                                "destination_ip" : "",
+                                "tos" : "",
+                                "length" : "",
+                                "ttl" : "",
+                                "protocol" : ""
+                            }    
+                        },
+                        "l4" : {
+                            "l4_dest_port" : "",
+                            "l4_source_port" : ""
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
+</pre>

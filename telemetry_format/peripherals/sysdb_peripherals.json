@@ -1,0 +1,55 @@
+# vim:set ft=json: 
+{
+    "peripherals": {
+        "fans" : [
+            {
+                "1" : {
+                    "status" : "present",
+                    "speed_rpm" : "",
+                    "speed_per" : 5
+                }
+            }
+        ],
+        "powers" : [
+            {
+                "1" : {
+                    "status" : "",
+                    "serial_number" : "",
+                    "temperature" : "",
+                    "input_current" : "",
+                    "input_voltage" : "",
+                    "input_power" : "",
+                    "output_current" : "",
+                    "output_voltage" : "",
+                    "output_power" : ""
+                }
+            }
+        ],
+        "sensors" : [
+            {
+                "1" : {
+                    "temperature" : 2
+                }
+            }
+        ],
+        "tranceivers" : [
+            {
+                "te-1/1/1" : {
+                    "vendor_name" : ,
+                    "serial_number" : ,
+                    "product_number" : ,
+                    "module_type" : ,
+                    "cable_lenth" : ,
+                    "ddm" : {
+                        "temperature" :
+                        "voltage" :
+                        "bias" :
+                        "tx_power" :
+                        "rx_power" :
+                    } 
+                }
+            }
+        ]
+    }
+}
+

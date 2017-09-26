@@ -1,0 +1,50 @@
+# vim:set ft=json: 
+{
+    "forwarding_information_base": {
+        "l2" : {
+            "vlan_id" : [
+                {
+                    "12" : {
+                        "mac_address" : [
+                            {
+                                "00:03:0f:64:da:8f" : {
+                                    "type" : "dynamic",
+                                    "interface" : "ae1"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "46" : {
+                        "mac_address" : [
+                            {
+                                "00:03:0f:64:da:8f" : {
+                                    "type" : "dynamic",
+                                    "interface" : "te-1/1/44"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "vxlan" : {
+            "vsi_id" : [
+                {
+                    "12" : {
+                        "mac_address" : [
+                            {
+                                "00:03:0f:64:da:8f" : {
+                                    "type" : "dynamic",
+                                    "interface" : "ae1"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}
+

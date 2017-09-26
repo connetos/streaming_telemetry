@@ -1,0 +1,103 @@
+# vim:set ft=json: 
+{
+    "interface": {
+        "gigabit-ethernet": [
+            {
+                "te-1/1/1": {
+                    "description": "",
+                    "mtu": "1518",
+                    "speed": "10000",
+                    "enable": "true",
+                    "ether-options": {
+                        "flow-control": {
+                            "enable": "false"
+                        }
+                    },
+                    "family": {
+                        "ethernet-switching": {
+                            "native-vlan-id": "1",
+                            "port-mode": "access"
+                        }
+                    },
+                    "status" : {
+                        "link" : "yes",
+                        "speed" : "10000",
+                        "duplex" : "full"
+                    },
+                    "statistics": {
+                        "dot1d_base_port_delay_exceeded_discards":0,
+                        "dot1d_base_port_mtu_exceeded_discards":0,
+                        "dot1d_tp_port_in_discards":0,
+                        "dot1d_tp_port_in_frames":0,
+                        "dot1d_tp_port_out_frames":0,
+                        "dot3_alignment_errors":0,
+                        "dot3_carrier_sense_errors":0,
+                        "dot3_control_in_unknown_opcodes":0,
+                        "dot3_deffered_transmissions":0,
+                        "dot3_excessive_collisions":0,
+                        "dot3_fcs_errors":0,
+                        "dot3_frame_too_longs":0,
+                        "dot3_in_pause_frames":0,
+                        "dot3_internal_mac_receive_errors":0,
+                        "dot3_internal_mac_transmit_errors":0,
+                        "dot3_late_collisions":0,
+                        "dot3_multiple_collisions_frames":0,
+                        "dot3_out_pause_frames":0,
+                        "dot3_single_collisions_frames":0,
+                        "dot3_sqte_test_error":0,
+                        "dot3_symbol_errors":0,
+                        "ether_bcast_pkts":1,
+                        "ether_collisions":0,
+                        "ether_crc_align_errors":0,
+                        "ether_drop_events":65,
+                        "ether_fragements":0,
+                        "ether_jabbers":0,
+                        "ether_mcast_pkts":121,
+                        "ether_octets":16126,
+                        "ether_oversize_pkts":0,
+                        "ether_pkts":131,
+                        "ether_pkts_1024_to_1518_octets":0,
+                        "ether_pkts_128_to_255_octets":64,
+                        "ether_pkts_256_to_511_octets":0,
+                        "ether_pkts_512_to_1023_octets":0,
+                        "ether_pkts_64_octets":2,
+                        "ether_pkts_65_to_127_octets":65,
+                        "ether_rx_no_errors":0,
+                        "ether_rx_oversize_pkts":0,
+                        "ether_tx_no_errors":0,
+                        "ether_tx_oversize_pkts":0,
+                        "ether_undersize_pkts":0,
+                        "if_hc_in_broadcast_pkts":1,
+                        "if_hc_in_multicast_pkts":60,
+                        "if_hc_in_octets":8016,
+                        "if_hc_in_ucast_pkts":4,
+                        "if_hc_out_broadcast_pkts":0,
+                        "if_hc_out_multicast_pkts":61,
+                        "if_hc_out_octets":8110,
+                        "if_hc_out_ucast_pkts":5,
+                        "if_in_broadcast_pkts":1,
+                        "if_in_discards":65,
+                        "if_in_errors":0,
+                        "if_in_multicast_pkts":60,
+                        "if_in_non_ucast_pkts":0,
+                        "if_in_octets":8016,
+                        "if_in_ucast_pkts":4,
+                        "if_in_unknown_protocols":0,
+                        "if_out_broadcast_pkts":0,
+                        "if_out_discards":0,
+                        "if_out_errors":0,
+                        "if_out_multicast_pkts":61,
+                        "if_out_non_ucast_pkts":0,
+                        "if_out_octets":8110,
+                        "if_out_qlen":0,
+                        "if_out_ucast_pkts":5,
+                        "ip_forw_datagrams":0,
+                        "ip_in_discards":0,
+                        "ip_in_receives":0
+                    }
+                }
+            }
+        ]
+    }
+}
+

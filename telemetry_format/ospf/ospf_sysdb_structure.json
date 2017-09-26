@@ -1,0 +1,107 @@
+# vim:set ft=json: 
+{
+    "protocols": {
+        "ospf4": {
+            "area" : [
+                "0.0.0.0" : {
+                    "status" : {
+                        "spf_run_times" : 10,
+                        "area_bdr_router_count" : 11,
+                        "as_bdr_router_count" : 12,
+                        "area_lsa_count" : 20
+                    },
+                    "lsdb" : {
+                    },
+                    "area_range" : [
+                        {
+                            "1.1.1.0/24" : {
+                                "advertise" : {
+                                    "enable" : "true"
+                                }
+                            }
+                        }
+                    ],
+                    "area_type" : "normal",
+                    "default_lsa" : {
+                        "enable" : "true",
+                        "metric" : 1
+                    },
+                    "interface" : [
+                        {
+                            "vlan111" : {
+                                "link_type" : "p2p",
+                                "address" : [
+                                    {
+                                        "32.32.1.1" : {
+                                            "priority" : 128,
+                                            "hello_interval" : 10,
+                                            "router_dead_interval" : 40,
+                                            "interface_cost" : 1,
+                                            "retransmit_interval" : 5,
+                                            "transmit_delay" : 1,
+                                            "enable": true
+                                        }
+                                    }
+                                ],
+                                "vif" : [
+                                    {
+                                        "vif20" : {
+                                            "address" : [
+                                                {
+                                                    "12.12.12.1" : {
+                                                        "interface_cost" : 1
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "virtual_link" : [
+                        {
+                            "3.3.3.3" : {
+                                "authentication" : {
+                                    "md5" : {
+                                        "3" : {
+                                            "end_time" : "",
+                                            "max_time_drift" : "",
+                                            "password" : "",
+                                            "start_time" : ""
+                                        }
+                                    },
+                                    "simple_password" : ""
+                                },
+                                "hello-interval" : 10,
+                                "retransmit_interval" : 60,  
+                                "router_dead_interval" : 1800, 
+                                "transmit_area" : "", 
+                                "transmit_delay" : ""
+                            }
+                        }
+                    ],
+                    "summaries" : {
+                        "enable" : "true"
+                    }
+                }
+            ],
+           "export" : "",
+           "import" : "", 
+           "ip_router_alert" : {
+               "enable" : "true"
+           },
+           "rfc1538_compatibility" : {
+               "enable" : "true"
+           },
+           "router-id": "192.168.1.33",
+           "status" : {
+               "is_area_bdr" : true,
+               "is_as_bdr" : true,
+               "external_lsa" : 12,
+               "originate_lsa" : 10,
+               "rx_new_lsa" : 30
+           }
+        }
+    }
+}
